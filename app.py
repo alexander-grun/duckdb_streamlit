@@ -53,7 +53,7 @@ def fetch_data():
                                 sh1."Estimated quarters of funding available",
                                 sh1."Section 8.8",
                                 com."Business Description" 
-                            FROM "Sheet1" sh1  
+                            FROM "Cash_data" sh1  
                             LEFT JOIN "Company" com on sh1.Ticker = com.Ticker 
                             WHERE sh1."Ticker" IS NOT NULL''').fetchdf()
 
